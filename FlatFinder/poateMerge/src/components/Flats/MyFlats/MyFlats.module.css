@@ -21,7 +21,7 @@
 }
 .addFlatButton {
 /*   background-image: url("../../..\assets\depositphotos_63555777-stock-illustration-blue-light-background-texture.jpg"); */
-  background-image: url("../..\assets\depositphotos_63555777-stock-illustration-blue-light-background-texture.jpg");
+  background-image: url("./..\assets\depositphotos_63555777-stock-illustration-blue-light-background-texture.jpg");
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
