@@ -6,6 +6,8 @@ Proiectul simulează o platformă imobiliară unde utilizatorii pot căuta și e
 
 ## 📸 Capturi de ecran
 
+### 🏠 Home Page
+![🏠 Home Page](https://github.com/RoiuNICOLETA/flatFinder/blob/main/FlatFinder/poateMerge/flatFinderFinal/public/home%20page.png?raw=true)
 
 
 
