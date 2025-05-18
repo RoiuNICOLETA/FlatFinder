@@ -6,37 +6,7 @@ Proiectul simulează o platformă imobiliară unde utilizatorii pot căuta și e
 
 ## 📸 Capturi de ecran
 
-## 📸 Capturi de ecran
 
-### 🏠 Home Page
-![🏠 Home Page](https://github.com/RoiuNICOLETA/FlatFinder/blob/main/poateMerge/flatFinderFinal/public/home%20page.png?raw=true)
-
-### 🏘️ My Flats
-![🏘️ My Flats](https://github.com/RoiuNICOLETA/FlatFinder/blob/main/poateMerge/flatFinderFinal/public/my%20flats.png?raw=true)
-
-### ⭐ My Favorites
-![⭐ My Favorites](https://github.com/RoiuNICOLETA/FlatFinder/blob/main/poateMerge/flatFinderFinal/public/my%20favorites.png?raw=true)
-
-### ➕ Add New Flat
-![➕ Add New Flat](https://github.com/RoiuNICOLETA/FlatFinder/blob/main/poateMerge/flatFinderFinal/public/add%20new%20flat.png?raw=true)
-
-### 💛 Favorites List
-![💛 Favorites List](https://github.com/RoiuNICOLETA/FlatFinder/blob/main/poateMerge/flatFinderFinal/public/favorites.png?raw=true)
-
-### 👤 Profile Page
-![👤 Profile Page](https://github.com/RoiuNICOLETA/FlatFinder/blob/main/poateMerge/flatFinderFinal/public/profiles.png?raw=true)
-
-### 👁️ View Apartment (1)
-![👁️ View Apartment (1)](https://github.com/RoiuNICOLETA/FlatFinder/blob/main/poateMerge/flatFinderFinal/public/view%20ap.png?raw=true)
-
-### 👁️ View Apartment (2)
-![👁️ View Apartment (2)](https://github.com/RoiuNICOLETA/FlatFinder/blob/main/poateMerge/flatFinderFinal/public/view%20apart.png?raw=true)
-
-### 👥 Manage Users
-![👥 Manage Users](https://github.com/RoiuNICOLETA/FlatFinder/blob/main/poateMerge/flatFinderFinal/public/manage%20users.png?raw=true)
-
-
-### 👁️ View Apartment (2)
 
 
 ## 🚀 Tehnologii folosite
