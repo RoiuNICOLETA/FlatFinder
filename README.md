@@ -65,5 +65,6 @@ Proiectul simulează o platformă imobiliară unde utilizatorii pot căuta și e
 
 Email: nicoll27_2004@yahoo.com
 GitHub: RoiuNICOLETA    
+(Live Demo: [FlatFinder](https://flatfinder-nicoll.netlify.app)).
 
 ## 💡 Proiect creat cu pasiune și determinare în scop educațional.
