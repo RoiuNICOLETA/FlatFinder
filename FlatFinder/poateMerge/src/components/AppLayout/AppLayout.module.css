@@ -1,0 +1,36 @@
+.layoutContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-top: 120px;
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png"),
+    linear-gradient(135deg, #bee7c3, #204920);
+  background-blend-mode: overlay;
+}
+
+.mainContent {
+  flex-grow: 1;
+  padding: 20px;
+  width: 90%;
+  min-height: fit-content;
+  margin: 0 auto;
+  /* background: rgba(227, 234, 240, 0.896); */
+  background-image: url("..\../assets/Image-2024.jpeg");
+ 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding-top: 20px;
+  min-height: calc(100vh - 100px);
+}
+@media screen and (max-width: 768px) {
+  .layoutContainer {
+    padding-top: 0px; /* ✅ Ajustăm spațiul sub navbar */
+  }
+
+  .mainContent {
+    margin-top: 0px; /* ✅ Evităm decalajul mare */
+  }
+}

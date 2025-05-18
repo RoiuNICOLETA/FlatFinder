@@ -1,0 +1,223 @@
+.flatsListContainer {
+  width: 95%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.divFilterSort {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 0 20px;
+}
+/* ✅ Ajustare dimensiuni pentru filtre și sortare */
+.filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.filters input,
+.resetFilters {
+  padding: 8px;
+  border: 1px solid #a4d0d7;
+  border-radius: 5px;
+  font-size: 14px;
+  width: 150px;
+  box-shadow: 4px 4px 12px #a4d0d7;
+}
+.resetFilters {
+  margin-top: 6%;
+  height: 33px;
+  background-color: #a4d0d7;
+  color: #333;
+}
+.resetFilters:hover {
+  background-color: #d9f1f2;
+}
+
+/* ✅ Asigură alinierea corectă a grilei de apartamente */
+.flatsGrid {
+  width: 98%;
+  min-height: fit-content;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  margin: 0 auto;
+  padding-left: 1%;
+  justify-content: center;
+  align-items: stretch; /* ✅ Face cardurile să aibă aceeași înălțime */
+  gap: 30px;
+
+  justify-content: space-between;
+}
+
+/* ✅ Ajustare pentru cardurile apartamentelor */
+.flatCard {
+  border: 1px solid #ddd;
+  margin-bottom: px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ✅ Ajustare pentru imagini */
+.flatImage {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.customDropdown {
+  position: relative;
+  display: inline-block;
+  width: 150px;
+  margin-left: 20px;
+}
+
+.dropdownButton {
+  margin-top: 7%;
+  background-color: #a4d0d7;
+  color: #333;
+  padding: 8px 12px;
+  border: 1px solid #a4d0d7;
+  border-radius: 5px;
+  font-size: 14px;
+  width: 150px;
+  cursor: pointer;
+  text-align: left;
+  box-shadow: 4px 4px 12px #a4d0d7;
+  transition: background 0.2s ease-in-out;
+}
+
+.dropdownButton:hover {
+  background-color: #d9f1f2;
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  background-color: #ffffff;
+  border: 1px solid #a4d0d7;
+  border-radius: 5px;
+  width: 150px;
+  box-shadow: 4px 4px 12px #a4d0d7;
+  z-index: 10;
+}
+
+.dropdownMenu div {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.dropdownMenu div:hover {
+  background-color: #a4d0d7; /* ✅ Schimbă culoarea hover */
+  color: white;
+}
+
+/* ✅ Responsivitate mai bună */
+@media screen and (max-width: 768px) {
+  .filters,
+  .sorting {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .filters input,
+  .sorting select {
+    width: 100%; /* Ocupă întreaga lățime pe ecrane mici */
+  }
+}
+/* ✅ Responsivitate pentru ecrane mici */
+@media screen and (max-width: 768px) {
+  .divFilterSort {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .column {
+    width: 100%; /* Ocupă întreaga lățime pe ecrane mici */
+  }
+
+  .divFilterSort input,
+  .resetFilters,
+  .customDropdown {
+    width: 100%; /* Lățime completă */
+  }
+}
+/* ✅ Responsivitate pentru ecrane mici */
+@media screen and (max-width: 768px) {
+  .flatsGrid {
+    grid-template-columns: 1fr; /* ✅ Cardurile pe o singură coloană pe mobil */
+  }
+}
+
+
+
+.textHome {
+  text-decoration: none;
+  border: none;
+  color: rgb(106, 68, 68);
+}
+.divText {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2%;
+  background-image: url("../..\../assets\depositphotos_63555777-stock-illustration-blue-light-background-texture.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 95%;
+  border-radius: 1em;
+  border: 2px solid rgba(216, 194, 194, 0.404);
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.15);
+  justify-items: center;align-items: center;
+  margin-bottom: 2%;
+}
+@media screen and (max-width: 879px) {
+  .divText {
+    margin-top: 60px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .divText {
+    margin-top: 0px;
+  }
+}
+.toggleFiltersButton {
+  /* background-color: #a4d0d7; */
+  background-image: url("../..\../assets\depositphotos_63555777-stock-illustration-blue-light-background-texture.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: rgb(106, 68, 68);
+  padding: 10px 15px;
+  border: 1px solid #a4d0d7;
+  border-radius: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: 4px 4px 12px #a4d0d7;
+  transition: background 0.2s ease-in-out;
+  width: 15%;
+  font-weight: bold;
+}
+
+.toggleFiltersButton:hover {
+  background-color: #d9f1f2;
+}

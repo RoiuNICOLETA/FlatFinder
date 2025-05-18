@@ -1,0 +1,93 @@
+.editFlatContainer {
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+   justify-items: center;
+  
+    text-align: center;
+    width: 60%;
+    margin: 10px auto;
+    padding: 10px 0;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 4px 4px 10px rgba(124, 67, 1, 0.663);
+    border: 1px solid #b6974f;
+    text-align: center;
+    background: linear-gradient(135deg, #c6d5c6, #6c886c);
+}
+
+input, select {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    
+    border-radius: 5px;
+    box-shadow: 4px 4px 10px rgba(124, 67, 1, 0.663);
+  
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 95%;
+}
+
+.buttonGroup {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 0 2%;
+}
+
+.updateButton {
+    background-color: #a8b0ca;
+  color: whitesmoke;
+  width: 30%;
+  box-shadow: 4px 4px 10px rgba(124, 67, 1, 0.663);
+}
+
+.resetButton {
+    background-color: #d6e8d6;
+    color: rgb(99, 97, 97);
+    width: 30%;
+    box-shadow: 4px 4px 10px rgba(124, 67, 1, 0.663);
+}
+
+.cancelButton {
+    background-color: #cf767fc4;
+    color: white;
+    width: 30%;
+    box-shadow: 4px 4px 10px rgba(124, 67, 1, 0.663);
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.checkBox {
+    width: 60%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+.editFlatDescription{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 4px 4px 10px rgba(124, 67, 1, 0.663);
+    width: 95%;
+    border-radius: 20px;
+    margin-left: 2%;
+    
+    
+    justify-content: space-between;
+}
+.textareaSave{
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 4px 4px 10px rgba(124, 67, 1, 0.663);
+}
+.textarea{
+    width: 80%;
+}

@@ -1,0 +1,104 @@
+.favoritesContainer {
+  width: 96%;
+  max-width: 1200px;
+  margin: 3% auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.favoriteHead {
+  font-size: 24px;
+  margin-bottom: 20px;
+  /* color: #333; */
+  width: 50%;
+  text-align: center;
+  color: #5a4636;
+  border-bottom: 3px solid #d2a679;
+  display: flex;
+  justify-content: center;
+}
+
+.favoritesGrid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(300px, 1fr)
+  ); /* Distribuie elementele pe mai multe coloane */
+  gap: 20px; /* Spațiere între apartamente */
+  justify-content: center;
+  padding: 20px;
+
+  width: 100%;
+}
+
+.flatCard {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #fff;
+
+  transition: transform 0.2s ease-in-out;
+}
+
+.flatCard:hover {
+  transform: scale(1.03);
+}
+
+.flatImage {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-bottom: 1px solid #ddd;
+}
+
+.flatDetails {
+  padding: 15px;
+  text-align: center;
+}
+
+.flatDetails h3 {
+  margin: 10px 0;
+  font-size: 18px;
+  color: #007bff;
+}
+
+.flatDetails p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.removeButton {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+  margin-top: 10px;
+  transition: background 0.3s;
+}
+
+.removeButton:hover {
+  background-color: #cc0000;
+}
+@media (max-width: 768px) {
+  .favoritesGrid {
+    grid-template-columns: 1fr; /* Pe mobile, o singură coloană */
+  }
+}
+.pageContainer {
+  width: 100%;
+  min-height: 100vh;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transform-origin: center top;
+}

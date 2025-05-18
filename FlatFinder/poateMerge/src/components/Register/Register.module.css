@@ -1,0 +1,80 @@
+.registerContainer {
+  max-width: 400px;
+  margin: 10px auto;
+  padding: 0 30px 10px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 6px 6px 18px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  min-height: fit-content;
+}
+
+.registerContainer h2 {
+  margin-bottom: 20px;
+}
+
+.registerContainer form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.registerContainer input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 95%;
+}
+
+.registerContainer .passwordContainer {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.registerContainer .passwordContainer input {
+  flex: 1;
+}
+
+.registerContainer .togglePassword {
+  position: absolute;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.registerContainer button {
+  background-color: #a8b0ca;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.registerContainer button:hover {
+  background-color: #65a667;
+}
+/* ✅ Stilizare pentru toast */
+.toastSuccess {
+  background-color: #94dea6 !important; /* Verde pentru succes */
+  color: rgb(18, 17, 17) !important;
+  font-weight: bold;
+  border-radius: 10px;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+  font-size: 1.2rem;
+  padding: 12px;
+  border: 2px solid rgb(176, 106, 71);
+}
+
+.toastError {
+  background-color: #dc3545 !important; /* Roșu pentru eroare */
+  color: white !important;
+  font-weight: bold;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  font-size: 1.2rem;
+  padding: 12px;
+}

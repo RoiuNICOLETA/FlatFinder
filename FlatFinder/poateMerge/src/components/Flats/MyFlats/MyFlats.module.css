@@ -1,0 +1,85 @@
+.myFlatsContainer {
+  width: 100%;
+  max-width: 1200px;
+  margin: 5% auto 0 auto;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+}
+@media (max-width: 1020px) {
+  .myFlatsContainer {
+    margin: 12% auto 0 auto;
+  }
+}
+@media (max-width: 920px) {
+  .myFlatsContainer {
+    margin: 14% auto 0 auto;
+  }
+}
+.addFlatButton {
+  background-image: url("../../..\assets\depositphotos_63555777-stock-illustration-blue-light-background-texture.jpg");
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 15%;
+  height: 10%;
+  margin-right: 4%;
+  color: #5a4636;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-weight: bold;
+}
+
+.headerText {
+  color: #5a4636;
+  margin-left: 4%;
+}
+
+.flatsGrid {
+  width: 96.5%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.textareaSave {
+  display: flex;
+  justify-content: space-between;
+  background-image: url("../../..\assets\depositphotos_63555777-stock-illustration-blue-light-background-texture.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+
+  align-items: center;
+  border-radius: 1em;
+  border: 2px solid rgba(216, 194, 194, 0.404);
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.flatsGrid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(300px, 1fr)
+  ); /* Distribuie elementele pe mai multe coloane */
+  gap: 20px; /* Spațiere între apartamente */
+  justify-content: center;
+  padding: 20px;
+}
+@media (max-width: 768px) {
+  .myFlatsContainer {
+    margin: 3% auto 0 auto;
+  }
+
+  .flatsGrid {
+    grid-template-columns: 1fr; /* Pe mobile, o singură coloană */
+  }
+}

@@ -1,0 +1,167 @@
+.adminContainer {
+  width: 90%;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #fdf6e3; 
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border: 1px solid #d4af7a; 
+}
+
+.adminContainer h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.filters {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.inputAdmin {
+  padding: 8px; 
+  border: 1px solid #a4d0d7;
+  border-radius: 5px;
+  font-size: 14px;
+  width: 150px; 
+  box-shadow: 4px 4px 12px #a4d0d7;
+}
+.filters select {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #a4d0d7;
+  border-radius: 5px;
+  width: 13%;
+  border: 1px solid #a4d0d7;
+  border-radius: 5px;
+  font-size: 14px;
+  box-shadow: 4px 4px 12px #a4d0d7;
+}
+
+.customDropdown {
+  position: relative;
+  display: inline-block;
+  width: 150px;
+  margin-left: 20px;
+}
+
+.dropdownButton {
+  margin-top: 7%;
+  background-color: #a4d0d7;
+  color: #333;
+  padding: 8px 12px;
+  border: 1px solid #a4d0d7;
+  border-radius: 5px;
+  font-size: 14px;
+  width: 150px;
+  cursor: pointer;
+  text-align: left;
+  box-shadow: 4px 4px 12px #a4d0d7;
+  transition: background 0.2s ease-in-out;
+}
+
+.dropdownButton:hover {
+  background-color: #d9f1f2;
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  background-color: #ffffff;
+  border: 1px solid #a4d0d7;
+  border-radius: 5px;
+  width: 150px;
+  box-shadow: 4px 4px 12px #a4d0d7;
+  z-index: 10;
+}
+
+.dropdownMenu div {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.dropdownMenu div:hover {
+  background-color: #a4d0d7; 
+  color: white;
+}
+
+.userTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.userTable th,
+.userTable td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.userTable tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.userTable tr:hover {
+  background-color: #ddd;
+}
+
+.userTable button {
+  padding: 8px 12px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.userTable button:nth-child(1) {
+  background-color: #d9f1f2;
+  color: #333;
+}
+
+.userTable button:nth-child(2) {
+  background-color: #498cb8;
+  color: black;
+}
+
+.userTable button:nth-child(3) {
+  background-color: #405839;
+  color: white;
+}
+
+.userTable button:hover {
+  opacity: 0.8;
+}
+.loader {
+  width: 70px;
+  aspect-ratio: 1;
+  background: radial-gradient(farthest-side, #ffa516 90%, #0000) center/16px
+      16px,
+    radial-gradient(farthest-side, green 90%, #0000) bottom/12px 12px;
+  background-repeat: no-repeat;
+  animation: l17 1s infinite linear;
+  position: relative;
+  align-items: center;
+}
+.loader::before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  aspect-ratio: 1;
+  inset: auto 0 16px;
+  margin: auto;
+  background: #ccc;
+  border-radius: 50%;
+  transform-origin: 50% calc(100% + 10px);
+  animation: inherit;
+  animation-duration: 0.5s;
+}
+@keyframes l17 {
+  100% {
+    transform: rotate(1turn);
+  }
+}

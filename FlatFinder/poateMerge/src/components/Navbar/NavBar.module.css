@@ -1,0 +1,184 @@
+/* ✅ NAVBAR GENERAL */
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(135deg, #9aa09a, #6c886c);
+  color: #2e382e;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  padding: 8px 0;
+  z-index: 1000;
+  font-size: 1.1em;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: auto;
+}
+
+/* ✅ LOGO ȘI SESIUNEA (TIMP) */
+.topBar {
+  display: flex;
+  justify-content: space-between;
+  width: 96%;
+  padding: 5px 10px;
+  align-items: center;
+  background-image: url("../..\assets\istockphoto-694065514-612x612.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 1em;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+  margin-bottom: 0.5%;
+}
+
+/* ✅ LOGO */
+.logoContainer {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.logoImage {
+  height: 60px;
+  filter: drop-shadow(0 10px 15px #121010);
+  border-radius: 12px;
+}
+
+/* ✅ SESIUNEA (TIMP) */
+.sessionTime {
+  font-size: 12px;
+  font-weight: bold;
+  color: #2e382e;
+  background: #d6e8d6;
+  padding: 4px 10px;
+  border-radius: 20px;
+  box-shadow: 4px 4px 10px rgba(6, 6, 6, 0.958);
+  margin-right: 10px;
+  border: 1px solid #b6974f;
+}
+
+/* ✅ MESAJ HELLO DEASUPRA BUTOANELOR */
+.userGreeting {
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 1em;
+
+  color: #2e382e;
+  text-shadow: 4px 4px 8px #181616;
+}
+
+/* ✅ MENIU NAVIGAȚIE (CENTRAT, BUTOANE MAI MARI) */
+.navLinks {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.navLinks a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 4px 12px;
+  border-radius: 1em;
+  background: linear-gradient(135deg, #c3d6c3, #99bb99);
+  color: #2e382e;
+  transition: 0.3s;
+  box-shadow: 4px 4px 10px rgba(124, 67, 1, 0.663);
+  height: auto;
+  min-height: 30px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #b6974f;
+}
+
+.navLinks a:hover {
+  background: linear-gradient(135deg, #99bb99, #7aa87a);
+  transform: scale(1.05);
+}
+
+/* ✅ LINK ACTIV */
+.navLinks a.active {
+  background: linear-gradient(135deg, #7aa87a, #557755);
+  color: white;
+}
+
+/* ✅ LOGOUT & DELETE ACCOUNT */
+.logoutButton,
+.deleteButton {
+  background: none;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 4px 12px;
+  font-family: Arial, sans-serif;
+}
+
+.logoutButton {
+  color: #ff5733;
+}
+
+.logoutButton:hover {
+  color: #c43f1a;
+}
+
+.deleteButton {
+  color: #d9534f;
+}
+
+.deleteButton:hover {
+  color: #a94442;
+}
+
+.animatedText {
+  font-size: 30px;
+  font-weight: bold;
+  color: #062543;
+  text-shadow: 4px 4px 8px rgba(255, 255, 255, 0.767);
+  display: inline-block;
+  white-space: nowrap;
+  font-family: "book antiqua";
+  margin-right: 10%;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 5px 0;
+    position: relative;
+    height: auto;
+  }
+
+  .navLinks {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  .navLinks a {
+    font-size: 12px;
+    padding: 5px 8px;
+    min-height: 25px;
+  }
+
+  .topBar {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+  }
+
+  .logoImage {
+    height: 60px;
+  }
+
+  .sessionTime {
+    font-size: 10px;
+    padding: 2px 8px;
+  }
+}

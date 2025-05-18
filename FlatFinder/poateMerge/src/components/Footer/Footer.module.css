@@ -1,0 +1,44 @@
+.footbar {
+  background-color: #5c6e5e;
+
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.links,
+.contact {
+  flex: 1;
+  text-align: left;
+}
+
+.links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.links ul li {
+  margin: 5px 0;
+}
+
+.links ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.links ul li a:hover {
+  text-decoration: underline;
+}
+
+.copy {
+  margin-top: 20px;
+  font-size: 0.9em;
+}

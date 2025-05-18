@@ -1,0 +1,120 @@
+.flatViewContainer {
+  width: 90%;
+  max-width: 1100px;
+  max-height: 80vh; /* ✅ Asigură vizibilitatea integrală */
+  margin: 6px auto 10px;
+  padding: 0 10px;
+  background: #f8f1e4;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  font-family: "Georgia", serif;
+  color: #5a4636;
+  border: 2px solid #d2a679;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: auto; /* ✅ Dacă este nevoie, va permite scroll doar pe container */
+}
+
+.flatImage {
+  width: 100%;
+  max-height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 3px solid #d2a679;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  
+}
+
+/* ✅ Organizare în două coloane pentru detalii și mesaje */
+.sectionsContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  width: 100%;
+  max-width: 900px;
+}
+
+.flatDetailsContainer {
+  background: #fffaf3;
+  padding: 15px;
+  border-radius: 8px;
+  border-left: 5px solid #d2a679;
+}
+
+.messagesContainer {
+  background: #f3e5d8;
+  padding: 15px;
+  border-radius: 8px;
+  border: 2px solid #d2a679;
+  overflow-y: auto;
+}
+
+.descriptionContainer {
+  grid-column: span 2; /* ✅ Se întinde pe întreaga lățime */
+  background: #fffaf3;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 15px;
+  border-left: 5px solid #d2a679;
+  text-align: center;
+}
+
+/* ✅ Stil pentru fiecare mesaj */
+.messageCard {
+  border: 1px solid #a67c52;
+  padding: 12px;
+  border-radius: 5px;
+  background: #fffaf0;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.unread {
+  background: #ffecd2;
+}
+
+.read {
+  background: #e8f5e9;
+}
+
+button {
+  transition: all 0.3s ease-in-out;
+}
+
+.readButton {
+  background-color: #3e8e41;
+  color: white;
+}
+
+.deleteButton {
+  background-color: #c23b22;
+  color: white;
+}
+.loader {
+  width: 70px;
+  aspect-ratio: 1;
+  background:
+    radial-gradient(farthest-side,#ffa516 90%,#0000) center/16px 16px,
+    radial-gradient(farthest-side,green   90%,#0000) bottom/12px 12px;
+  background-repeat: no-repeat;
+  animation: l17 1s infinite linear;
+  position: relative;
+  align-items: center;
+}
+.loader::before {    
+  content:"";
+  position: absolute;
+  width: 8px;
+  aspect-ratio: 1;
+  inset: auto 0 16px;
+  margin: auto;
+  background: #ccc;
+  border-radius: 50%;
+  transform-origin: 50% calc(100% + 10px);
+  animation: inherit;
+  animation-duration: 0.5s;
+}
+@keyframes l17 { 
+  100%{transform: rotate(1turn)}
+}

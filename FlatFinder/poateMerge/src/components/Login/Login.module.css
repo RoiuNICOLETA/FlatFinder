@@ -1,0 +1,87 @@
+.loginContainer {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 15px 15px 4px rgba(51, 47, 47, 0.552);
+  text-align: center;
+  margin-top: 10%;
+}
+
+.loginContainer h2 {
+  margin-bottom: 20px;
+}
+
+.loginContainer form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.inputMail {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 95%;
+}
+
+.loginContainer .passwordContainer {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.loginContainer .passwordContainer input {
+  flex: 1;
+}
+
+.loginContainer .togglePassword {
+  position: absolute;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  width: 2.2em;
+  height: 2.2em;
+}
+
+.loginContainer button {
+  background-color: #a8b0ca;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.loginContainer button:hover {
+  background-color: #65a667;
+}
+
+.errorText {
+  color: red;
+  font-size: 14px;
+}
+/* ✅ Stilizare pentru toast */
+.toastSuccess {
+  background-color: #94dea6 !important; /* Verde pentru succes */
+  color: rgb(18, 17, 17) !important;
+  font-weight: bold;
+  border-radius: 10px;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+  font-size: 1.2rem;
+  padding: 12px;
+  border: 2px solid rgb(176, 106, 71);
+}
+
+.toastError {
+  background-color: #dc3545 !important; /* Roșu pentru eroare */
+  color: white !important;
+  font-weight: bold;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  font-size: 1.2rem;
+  padding: 12px;
+}
